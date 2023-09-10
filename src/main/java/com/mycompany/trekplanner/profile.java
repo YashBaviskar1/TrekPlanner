@@ -41,6 +41,9 @@ public class profile extends javax.swing.JFrame {
         jLabel13 = new javax.swing.JLabel();
         jButton4 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(1080, 720));
@@ -51,46 +54,48 @@ public class profile extends javax.swing.JFrame {
 
         blankpfp.setIcon(new javax.swing.ImageIcon("C:\\Users\\ADMIN\\Desktop\\yASH\\EMPTY_PFP.png")); // NOI18N
         getContentPane().add(blankpfp);
-        blankpfp.setBounds(21, 45, 124, 124);
+        blankpfp.setBounds(20, 100, 124, 124);
 
-        myprofiletext.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
+        myprofiletext.setFont(new java.awt.Font("Segoe UI Semibold", 0, 18)); // NOI18N
         myprofiletext.setText("MY PROFILE");
         getContentPane().add(myprofiletext);
-        myprofiletext.setBounds(21, 6, 112, 27);
+        myprofiletext.setBounds(20, 60, 120, 40);
 
-        usernametext.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
+        usernametext.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
         usernametext.setText("username : ");
         getContentPane().add(usernametext);
-        usernametext.setBounds(151, 45, 101, 20);
+        usernametext.setBounds(160, 140, 101, 25);
 
-        agetext.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
+        agetext.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
         agetext.setText("age : ");
         getContentPane().add(agetext);
-        agetext.setBounds(151, 71, 52, 20);
+        agetext.setBounds(160, 170, 52, 25);
 
-        jLabel5.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
         jLabel5.setText("location : ");
         getContentPane().add(jLabel5);
-        jLabel5.setBounds(151, 97, 62, 20);
+        jLabel5.setBounds(160, 200, 90, 20);
 
         jLabel6.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
         jLabel6.setText("Past Treks : ");
         getContentPane().add(jLabel6);
-        jLabel6.setBounds(21, 393, 74, 20);
+        jLabel6.setBounds(40, 440, 74, 20);
 
         jLabel7.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
         jLabel7.setText("About me : ");
         getContentPane().add(jLabel7);
-        jLabel7.setBounds(21, 214, 72, 20);
+        jLabel7.setBounds(30, 310, 72, 20);
+
+        textArea1.setForeground(new java.awt.Color(255, 255, 255));
         getContentPane().add(textArea1);
-        textArea1.setBounds(105, 222, 601, 99);
+        textArea1.setBounds(120, 320, 601, 99);
         getContentPane().add(textArea2);
-        textArea2.setBounds(105, 393, 601, 113);
+        textArea2.setBounds(120, 440, 600, 110);
 
         jLabel10.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
         jLabel10.setText("Connect with me : ");
         getContentPane().add(jLabel10);
-        jLabel10.setBounds(21, 574, 118, 20);
+        jLabel10.setBounds(50, 570, 118, 20);
 
         jLabel11.setFont(new java.awt.Font("Segoe UI Semibold", 0, 12)); // NOI18N
         jLabel11.setText("instagram : ");
@@ -116,10 +121,48 @@ public class profile extends javax.swing.JFrame {
         getContentPane().add(jButton4);
         jButton4.setBounds(1325, 682, 93, 23);
 
-        jButton1.setText("home");
+        jButton1.setText("HOME");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton1);
-        jButton1.setBounds(10, 720, 72, 23);
+        jButton1.setBounds(40, 660, 100, 30);
         jButton1.getAccessibleContext().setAccessibleName("HOME");
+
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\ADMIN\\Desktop\\yASH\\TRK_PLANNER_PICS\\BGpict.jpg")); // NOI18N
+        jLabel1.setText("jLabel1");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(0, -20, 890, 850);
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        getContentPane().add(jPanel1);
+        jPanel1.setBounds(490, 70, 100, 100);
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        getContentPane().add(jPanel2);
+        jPanel2.setBounds(520, 110, 100, 100);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -127,6 +170,10 @@ public class profile extends javax.swing.JFrame {
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -168,6 +215,7 @@ public class profile extends javax.swing.JFrame {
     private javax.swing.JLabel blankpfp;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton4;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
@@ -175,6 +223,8 @@ public class profile extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JLabel myprofiletext;
     private java.awt.TextArea textArea1;
     private java.awt.TextArea textArea2;

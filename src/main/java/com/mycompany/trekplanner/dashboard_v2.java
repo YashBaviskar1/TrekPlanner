@@ -28,22 +28,21 @@ public class dashboard_v2 extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Dashboard");
         setLocation(new java.awt.Point(50, 50));
-        setMaximumSize(new java.awt.Dimension(1080, 720));
-        setMinimumSize(new java.awt.Dimension(1080, 720));
+        setMaximumSize(new java.awt.Dimension(600, 600));
+        setMinimumSize(new java.awt.Dimension(600, 600));
         setName("dashboard"); // NOI18N
-        setPreferredSize(new java.awt.Dimension(1080, 720));
+        setPreferredSize(new java.awt.Dimension(700, 500));
         setResizable(false);
         getContentPane().setLayout(null);
 
@@ -55,76 +54,61 @@ public class dashboard_v2 extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Sitka Banner", 1, 24)); // NOI18N
         jLabel1.setText("DASHBOARD");
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(0, 0, 149, 45);
+        jLabel1.setBounds(20, 10, 149, 45);
 
-        jPanel2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jLabel3.setFont(new java.awt.Font("Swis721 BlkCn BT", 0, 36)); // NOI18N
+        jLabel3.setText("PLANNER");
+        jPanel1.add(jLabel3);
+        jLabel3.setBounds(30, 120, 150, 56);
 
-        jButton2.setBackground(new java.awt.Color(153, 153, 153));
-        jButton2.setFont(new java.awt.Font("Sitka Small", 0, 24)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Swis721 BlkCn BT", 0, 36)); // NOI18N
+        jLabel2.setText("TREK");
+        jLabel2.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+        jPanel1.add(jLabel2);
+        jLabel2.setBounds(30, 80, 91, 52);
+
+        jPanel1.add(jLabel4);
+        jLabel4.setBounds(130, 150, 100, 50);
+
+        jButton2.setBackground(new java.awt.Color(204, 255, 255));
+        jButton2.setFont(new java.awt.Font("Swis721 Cn BT", 0, 24)); // NOI18N
         jButton2.setText("CREATE A TREK");
+        jButton2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
+        jPanel1.add(jButton2);
+        jButton2.setBounds(10, 350, 170, 70);
+        jButton2.getAccessibleContext().setAccessibleParent(jLabel5);
 
-        jButton3.setBackground(new java.awt.Color(153, 153, 153));
-        jButton3.setFont(new java.awt.Font("Sitka Small", 0, 24)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(51, 51, 51));
+        jButton3.setBackground(new java.awt.Color(204, 255, 255));
+        jButton3.setFont(new java.awt.Font("Swis721 Cn BT", 0, 24)); // NOI18N
         jButton3.setText("MY PROFILE ");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton3);
+        jButton3.setBounds(200, 350, 210, 70);
 
-        jButton1.setBackground(new java.awt.Color(153, 153, 153));
-        jButton1.setFont(new java.awt.Font("Sitka Small", 0, 24)); // NOI18N
+        jButton1.setBackground(new java.awt.Color(204, 255, 255));
+        jButton1.setFont(new java.awt.Font("Swis721 Cn BT", 0, 24)); // NOI18N
         jButton1.setText("JOIN A TREK");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-
-        jPanel1.add(jPanel2);
-        jPanel2.setBounds(-30, 430, 760, 74);
-
-        jLabel3.setFont(new java.awt.Font("Swis721 BlkCn BT", 0, 36)); // NOI18N
-        jLabel3.setText("PLANNER");
-        jPanel1.add(jLabel3);
-        jLabel3.setBounds(40, 130, 150, 56);
-
-        jLabel2.setFont(new java.awt.Font("Swis721 BlkCn BT", 0, 36)); // NOI18N
-        jLabel2.setText("TREK");
-        jLabel2.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
-        jPanel1.add(jLabel2);
-        jLabel2.setBounds(40, 80, 91, 52);
-
-        jPanel1.add(jLabel4);
-        jLabel4.setBounds(130, 150, 100, 50);
+        jPanel1.add(jButton1);
+        jButton1.setBounds(420, 350, 190, 70);
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/trekplanner/dashboard_2.jpg"))); // NOI18N
         jPanel1.add(jLabel5);
-        jLabel5.setBounds(0, 30, 710, 390);
+        jLabel5.setBounds(10, -10, 720, 520);
+        jLabel5.getAccessibleContext().setAccessibleParent(jLabel5);
 
         getContentPane().add(jPanel1);
         jPanel1.setBounds(0, 0, 729, 515);
@@ -139,6 +123,10 @@ public class dashboard_v2 extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -185,6 +173,5 @@ public class dashboard_v2 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
 }
